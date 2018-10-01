@@ -1,0 +1,58 @@
+.icons i {
+    font-size: 16px;
+}
+
+footer .icons .telegram i {
+    font-size: 28px !important;
+    color: #f3f3f7 !important;
+    background: #40474e;
+    transition: color .3s;
+}
+
+.icons .social {
+    background-color: #f3f3f7;
+    border-radius: 50%;
+    color: #40474e;
+    width: 28px;
+    height: 28px;
+    align-items: center;
+    justify-content: center;
+    transition: background-color .3s;
+}
+
+.icons .social:first-child {
+    margin-left: 0 !important;
+}
+
+.icons .social + .social {
+    margin-left: 15px;
+}
+
+footer .icons .telegram i:hover {
+    color: #559dff !important;
+}
+
+.icons a:hover {
+    background-color: #559dff !important;
+}
+
+.Main .list_data .table .body .container .info .right .icons a:hover {
+    background-color: #285285 !important;
+}
+
+@media all and (max-width: 640px), (max-width: 812px) and (orientation: landscape) {
+    .icons {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .icons .social {
+        margin-left: 0 !important;
+        width: 35px !important;
+        height: 35px !important;
+    }
+
+    .icons i {
+        font-size: 20px !important;
+    }
+}

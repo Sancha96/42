@@ -1,0 +1,64 @@
+.Main .list_data .table .head {
+    padding: 0 55px;
+    font-size: 16px;
+    font-family: FagotCondensed, sans-serif;
+    color: #285285;
+    letter-spacing: 1px;
+}
+
+.Main .list_data .table .head > div {
+    padding: 15px 0;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.Main .list_data .table .head > div:nth-child(1),
+.Main .list_data .table .head > div:nth-child(2),
+.Main .list_data .table .head > div:nth-child(5) {
+    flex: 0 0 145px;
+}
+
+.Main .list_data .table .head > div:nth-child(4) {
+    flex: 0 0 150px;
+}
+
+.Main .list_data .table .head > div:nth-child(6) {
+    flex: 0 0 220px;
+}
+
+.Main .list_data .table .head > div:nth-child(7) {
+    flex: 0 0 90px;
+    text-align: center;
+}
+
+.Main .list_data .table .head > div:nth-child(3) {
+    flex-grow: 1;
+}
+
+.Main .list_data .table .head .sort {
+    margin-left: 8px;
+}
+
+.Main .list_data .table .head .sort i {
+    font-size: 14px;
+    color: white;
+}
+
+@media all and (max-width: 640px), (max-width: 812px) and (orientation: landscape) {
+    .Main .list_data .table .head {
+        padding: 0;
+        font-size: 4.4vw;
+    }
+
+    .Main .list_data .table .head > div:nth-child(1) {
+        padding-left: 15px;
+        flex-grow: 1;
+        justify-content: flex-start;
+    }
+
+    .Main .list_data .table .head > div:nth-child(2),
+    .Main .list_data .table .head > div:nth-child(3) {
+        flex: 0 0 25%;
+    }
+}

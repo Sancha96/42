@@ -1,0 +1,10 @@
+.Events .top_row {
+    padding: 0 55px;
+    margin-bottom: 50px;
+}
+
+@media all and (max-width: 640px), (max-width: 812px) and (orientation: landscape) {
+    .Events .top_row {
+        padding: 0;
+    }
+}

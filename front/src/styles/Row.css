@@ -1,0 +1,348 @@
+.Main .list_data .table .body .row {
+    padding: 14px 0;
+    font-family: Lato-Medium, sans-serif;
+    font-size: 16px;
+    background: #f9f9fb;
+    width: 1170px;
+    z-index: 1;
+}
+
+.Main .list_data .table .body .container {
+    align-items: center;
+}
+
+.Main .list_data .table .body .row {
+    height: 27px;
+    align-items: center;
+}
+
+.Main .list_data .table .body .row > div {
+    text-align: center;
+}
+
+.Main .list_data .table .body .container + .container {
+    margin-top: 8px;
+}
+
+.Main .list_data .table .body .row > div:nth-child(1),
+.Main .list_data .table .body .row > div:nth-child(2),
+.Main .list_data .table .body .row > div:nth-child(5) {
+    flex: 0 0 145px;
+}
+
+.Main .list_data .table .body .row > div:nth-child(4) {
+    flex: 0 0 150px;
+}
+
+.Main .list_data .table .body .row > div:nth-child(6) {
+    flex: 0 0 220px;
+}
+
+.Main .list_data .table .body .row > div:nth-child(7) {
+    flex: 0 0 90px;
+}
+
+.Main .list_data .table .body .row > div:nth-child(3) {
+    flex-grow: 1;
+    padding-left: 40px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+
+.Main .list_data .table .body .row > div:nth-child(3) .img {
+    flex: 0 0 35px;
+}
+
+.Main .list_data .table .body .row > div:nth-child(3) .img img {
+    max-width: 30px;
+}
+
+.Main .list_data .table .body .row > div:nth-child(3) .text {
+    flex-grow: 1;
+}
+
+.Main .list_data .table .body .row > div + div {
+    border-left: 2px solid #f3f3f3;
+}
+
+.Main .list_data .table .body .row:hover {
+    background: #fff;
+    cursor: pointer;
+}
+
+.Main .list_data .table .body .row > div:nth-child(4) {
+    font-family: Lato-Black, sans-serif;
+}
+
+.Main .list_data .table .body .row img.down {
+    transition: .6s;
+}
+
+.Main .list_data .table .body .row img.up {
+    transform: rotate(180deg);
+    transition: .6s;
+}
+
+.Main .list_data .table .body .container {
+    transition: .6s;
+    margin: 0 55px;
+    position: relative;
+    height: 68px;
+}
+
+.Main .list_data .table .body .container .info {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    top: 33px;
+    z-index: 0;
+    transition: .6s;
+}
+
+.Main .list_data .table .body .container.open .row {
+    z-index: 3;
+}
+
+.Main .list_data .table .body .container.open .row,
+.Main .list_data .table .body .container.open {
+    background: #fff;
+}
+
+.Main .list_data .table .body .container.open {
+    box-shadow: 0 0 20px 0 #a1a1a54a;
+    margin-left: 35px;
+    margin-right: 35px;
+    height: 148px;
+    transition: .6s;
+}
+
+.Main .list_data .table .body .container.open .info {
+    top: 55px;
+    z-index: 2;
+    padding: 30px 0;
+    transition: .6s;
+}
+
+.Main .list_data .table .body .container .info > div {
+    width: 50%;
+}
+
+.Main .list_data .table .body .container .info .left {
+    justify-content: space-evenly;
+}
+
+.Main .list_data .table .body .container .info .left > div {
+    font-family: Lato-Medium, sans-serif;
+    font-size: 16px;
+    color: #285285;
+    text-decoration: underline;
+    align-items: center;
+}
+
+.Main .list_data .table .body .container .info .left > div:hover {
+    color: #559dff;
+}
+
+.Main .list_data .table .body .container .info .text {
+    margin-left: 10px;
+}
+
+.Main .list_data .table .body .container .info .right {
+    justify-content: space-around;
+    padding-right: 40px;
+}
+
+.Main .list_data .table .body .container .info .right .more {
+    font-family: Lato-Medium, sans-serif;
+    font-size: 16px;
+    color: #285285;
+    text-decoration: underline;
+    margin-left: auto;
+}
+
+.Main .list_data .table .body .container .info .right .more:hover {
+    color: #559dff;
+}
+
+.Main .list_data .table .body .container .info .right > div {
+    flex: 0 0 70%;
+    justify-content: center;
+}
+
+@media all and (max-width: 640px), (max-width: 812px) and (orientation: landscape) {
+    .Main .list_data .table .body .container {
+        margin-right: 0;
+        margin-left: 0;
+    }
+    .Main .list_data .table .body .row {
+        width: 100%;
+        font-size: 4.4vw;
+        padding: 10px 0;
+        height: 35px;
+    }
+
+    .Main .list_data .table .body .row > div {
+        align-items: center;
+    }
+
+    .Main .list_data .table .body .row > div:nth-child(1) {
+        padding: 0 0 0 15px;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .Main .list_data .table .body .row > div:nth-child(1) .img {
+        flex: 0 0 35px;
+    }
+
+    .Main .list_data .table .body .row > div:nth-child(1) .text {
+        flex-grow: 1;
+        text-align: left;
+        padding-right: 5px;
+    }
+
+    .Main .list_data .table .body .row > div:nth-child(2) {
+        display: flex;
+        font-family: Lato-Black, sans-serif;
+        justify-content: center;
+    }
+
+    .Main .list_data .table .body .row > div:nth-child(2),
+    .Main .list_data .table .body .row > div:nth-child(3) {
+        flex: 0 0 25%;
+    }
+
+    .Main .list_data .table .body .row > div:nth-child(3) {
+        padding: 0;
+        text-align: center;
+    }
+
+    .Main .list_data .table .body .container {
+        padding: 0;
+        height: 55px;
+        transition: .6s;
+    }
+
+    .Main .list_data .table .body .container.open {
+        margin-left: 0;
+        margin-right: 0;
+        height: 330px;
+        transition: .6s;
+    }
+
+    .Main .list_data .table .body .container .info,
+    .Main .list_data .table .body .container .info .left,
+    .Main .list_data .table .body .container .info .right {
+        flex-direction: column;
+    }
+
+    .Main .list_data .table .body .container .info {
+        height: 10px;
+        top: 0;
+        overflow: hidden;
+        transition: height .6s, top .6s, width .6s;
+    }
+
+    .Main .list_data .table .body .container.open .info {
+        padding: 0 15px 20px;
+        top: 60px;
+        width: calc(100% - 30px);
+        height: 250px;
+        transition: height .6s, top .6s, width .6s;
+    }
+
+    .Main .list_data .table .body .container .info > div {
+        width: 100%;
+    }
+
+    .Main .list_data .table .body .container .info .left {
+        width: calc(100% - 20px);
+        margin-bottom: 30px;
+        opacity: 0;
+        transition: opacity .3s;
+    }
+
+    .Main .list_data .table .body .container .info .right {
+        padding: 0;
+        width: 100%;
+        opacity: 0;
+        transition: opacity .3s;
+    }
+
+    .Main .list_data .table .body .container.open .info .transform_column,
+    .Main .list_data .table .body .container.open .info .left,
+    .Main .list_data .table .body .container.open .info .right {
+        opacity: 1;
+        transition: opacity .2s;
+    }
+
+    .Main .list_data .table .body .container .info .text {
+        margin-left: 0;
+    }
+
+    .Main .list_data .table .body .container .info .left > div > div:first-child {
+        flex: 0 0 25px;
+    }
+
+    .Main .list_data .table .body .container .info .left > div {
+        font-size: 4.4vw;
+        width: fit-content;
+    }
+
+    .Main .list_data .table .body .container .info .left > div + div {
+        margin-top: 20px;
+    }
+
+    .Main .list_data .table .body .container .info .transform_column {
+        opacity: 0;
+        transition: opacity .3s;
+        border-top: 2px solid #f3f3f3;
+    }
+
+    .Main .list_data .table .body .container .info .transform_column > div {
+        padding: 15px 0;
+        border-bottom: 2px solid #f3f3f3;
+        align-items: baseline;
+    }
+
+    .Main .list_data .table .body .container .info .transform_column > div > div {
+        align-items: baseline;
+    }
+
+    .Main .list_data .table .body .container .info .transform_column .key {
+        font-size: 4.4vw;
+        font-family: FagotCondensed, sans-serif;
+        color: #285285;
+        letter-spacing: 1px;
+    }
+
+    .Main .list_data .table .body .container .info .transform_column .date .start .key {
+        flex: 0 0 50%;
+    }
+
+    .Main .list_data .table .body .container .info .transform_column .date .end .key {
+        flex: 0 0 40%;
+    }
+
+    .Main .list_data .table .body .container .info .transform_column .industry .key {
+        flex: 0 0 25%;
+    }
+
+    .Main .list_data .table .body .container .info .transform_column .value {
+        font-size: 4.4vw;
+        font-family: Lato-Medium, sans-serif;
+    }
+
+    .Main .list_data .table .body .container .info .transform_column .start,
+    .Main .list_data .table .body .container .info .transform_column .end {
+        width: 50%;
+    }
+
+    .Main .list_data .table .body .container .info .transform_column + .right,
+    .Main .list_data .table .body .container .info .transform_column + .left {
+        margin-top: 15px;
+    }
+}

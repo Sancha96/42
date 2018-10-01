@@ -1,0 +1,37 @@
+{
+  "name": "front",
+  "version": "0.1.0",
+  "private": true,
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "dependencies": {
+    "apollo-cache-inmemory": "^1.2.10",
+    "apollo-client": "^2.4.2",
+    "apollo-link-http": "^1.5.4",
+    "graphql": "^0.11.7",
+    "graphql-tag": "^2.5.0",
+    "history": "^3.3.0",
+    "i": "^0.3.6",
+    "npm": "^6.4.1",
+    "prop-types": "^15.6.2",
+    "react": "^16.5.0",
+    "react-apollo": "^2.1.11",
+    "react-dom": "^16.4.1",
+    "react-google-maps": "^9.4.5",
+    "react-router": "^3.2.1",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "1.1.5",
+    "react-sticky": "^6.0.3",
+    "react-sticky-header": "^0.2.0",
+    "react-sticky-state": "^2.1.9",
+    "reactjs-popup": "^1.2.0",
+    "recompose": "latest"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}

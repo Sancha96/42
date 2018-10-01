@@ -1,0 +1,33 @@
+.Main .top_block {
+    text-align: left;
+    color: black;
+    padding: 0 425px 60px 155px;
+}
+
+.Main .top_block .caption {
+    font-size: 30px;
+    font-family: FagotCondensed, sans-serif;
+    margin-bottom: 10px;
+}
+
+.Main .top_block .description {
+    font-size: 16px;
+    font-family: Lato-Regular, sans-serif;
+    line-height: 22px;
+}
+
+.Main .list_data {
+    margin-bottom: 80px;
+}
+
+.Main .table .fa-spinner {
+    margin: 60px auto 0;
+    font-size: 30px;
+    color: #285285;
+}
+
+@media all and (max-width: 640px), (max-width: 812px) and (orientation: landscape) {
+    .Main .list_data {
+        margin-bottom: 40px;
+    }
+}

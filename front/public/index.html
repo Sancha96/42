@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" id="viewport" content="width=device-width" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="theme-color" content="#000000">
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+    <script src="https://use.fontawesome.com/02c86cd895.js"></script>
+    <title>React App</title>
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+  <script>
+      const viewport_meta = document.getElementById('viewport');
+
+      const viewports = {
+          default: viewport_meta.getAttribute('content'),
+          landscape: 'width=1280'
+      };
+
+      const viewport_set = function() {
+          if ( screen.width <= 640 || window.orientation !== 0 && screen.width <= 812 )
+              viewport_meta.setAttribute('content', viewports.default + ', user-scalable=no')
+          else
+              viewport_meta.setAttribute('content', viewports.landscape);
+      };
+
+      viewport_set();
+
+      window.onresize = function() {
+          viewport_set();
+      }
+  </script>
+</html>

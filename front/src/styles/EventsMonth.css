@@ -1,0 +1,257 @@
+.month {
+    width: 1030px;
+    align-items: center;
+}
+
+.month > .caption {
+    cursor: pointer;
+    align-items: center;
+    padding-bottom: 55px;
+    width: 100%;
+}
+
+.month > .caption .text {
+    font-family: FagotCondensed, sans-serif;
+    color: #559dff;
+    font-size: 16px;
+}
+
+.month > .caption .line {
+    flex-grow: 1;
+    height: 2px;
+    margin: 0 20px;
+    background-color: #b0b0b0;
+}
+
+.month > .caption .arrow {
+    transition: .6s;
+}
+
+.month > .caption .arrow.transform {
+    transform: rotate(180deg);
+    transition: .3s;
+}
+
+.month .blocks {
+    align-items: center;
+    height: 0;
+    overflow: hidden;
+    transition: .6s;
+}
+
+.month .blocks.open {
+    height: fit-content;
+}
+
+.month .block {
+    opacity: 0;
+    width: 970px;
+    height: 253px;
+    background-color: #f9f9fb;
+    transition: .6s;
+}
+
+.month .blocks.open .block {
+    opacity: 1;
+}
+
+.month .block:hover {
+    width: 1030px;
+    height: 300px;
+    box-shadow: 0 0 20px 0 #0000001c;
+}
+
+.month .block + .block {
+    margin-top: 30px;
+}
+
+.month .block .left {
+    flex-grow: 1;
+    padding: 0 30px 0 70px;
+    justify-content: center;
+    transition: .6s;
+}
+
+.month .block .left .small_text {
+    font-family: Lato-Regular, sans-serif;
+    font-size: 12px;
+    color: #727272;
+    text-decoration: underline;
+    text-underline-position: under;
+    margin-bottom: 30px;
+    transition: .6s;
+}
+
+.month .block:hover .left .small_text {
+    color: #559dff;
+}
+
+.month .block .left .info {
+    margin-bottom: 20px;
+}
+
+.month .block .left .info .day {
+    line-height: 20px;
+}
+
+.month .block .left .info .month {
+    width: initial;
+    line-height: 20px;
+}
+
+.month .block .left .info .name {
+    margin-left: 30px;
+    color: #4f4f4f;
+    font-family: FagotCondensed, sans-serif;
+    font-size: 45px;
+    line-height: 36px;
+}
+
+.month .block .left .location {
+    color: #727272;
+    font-family: Lato-Regular, sans-serif;
+    align-items: baseline;
+    transition: .6s;
+}
+
+.month .block .left .logo {
+    display: none;
+}
+
+.month .block:hover .left .location {
+    color: #559dff;
+}
+
+.month .block .left .location .text {
+    font-size: 12px;
+    margin-left: 8px;
+}
+
+.month .block .right {
+    flex: 0 0 485px;
+    position: relative;
+    overflow: hidden;
+    transition: .6s;
+}
+
+.month .block .right .description {
+    position: absolute;
+    bottom: -280px;
+    padding: 0 110px 0 90px;
+    height: 280px;
+    background: #ffffffcc;
+    font-family: Lato-Semibold, sans-serif;
+    color: #333333;
+    transition: .6s;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+}
+
+.month .block .right .description .continue {
+    margin-top: 20px;
+    width: 100%;
+    justify-content: flex-end;
+    color: #559dff;
+    font-size: 12px;
+    font-family: Lato-Regular, sans-serif;
+}
+
+.month .block .right .description .continue a:hover {
+    color: #285285;
+}
+
+.month .block:hover .right {
+    flex: 0 0 630px;
+}
+
+.month .block:hover .right .description {
+    bottom: 0;
+    opacity: 1;
+    transition: .6s;
+}
+
+.month .block .right .logo {
+    position: absolute;
+    width: 118px;
+    height: 118px;
+    bottom: -15px;
+    right: -15px;
+}
+
+@media all and (max-width: 640px), (max-width: 812px) and (orientation: landscape) {
+    .month {
+        width: 100%;
+    }
+
+    .month > .caption {
+        display: none;
+    }
+
+    .month .blocks {
+        width: 100%;
+    }
+
+    .month .blocks .block {
+        width: 100%;
+        background-color: #fff;
+        height: initial;
+    }
+
+    .month .blocks.open {
+        height: initial;
+        padding: 20px 0;
+    }
+
+    .month .block .left .small_text {
+        font-size: 14px;
+        margin-bottom: 25px;
+    }
+
+    .month .block .left .info {
+        margin-bottom: 0;
+    }
+
+    .month .block .left .info .month {
+        line-height: 25px;
+    }
+
+    .month .block .left .location {
+        display: none;
+    }
+
+    .month .block .left .info .name {
+        margin-left: 20px;
+        font-size: 36px;
+        line-height: 30px;
+        color: #767676;
+    }
+
+    .month .block .left {
+        position: relative;
+        padding: 20px 20px 30px 15px;
+        justify-content: initial;
+    }
+
+    .month .block .right {
+        display: none;
+    }
+
+    .month .block .left .logo {
+        display: block;
+        position: absolute;
+        bottom: -10px;
+        right: 15px;
+        height: 50px;
+        width: 50px;
+    }
+
+    .month .block .left .logo img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .month .block + .block {
+        margin-top: 20px;
+    }
+}

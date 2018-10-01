@@ -1,0 +1,248 @@
+.Event .top_row {
+    padding-left: 50px;
+    margin-bottom: 131px;
+}
+
+.Event .top_row .left {
+    flex-grow: 1;
+}
+
+.Event .top_row .left .small_text {
+    font-family: Lato-Regular, sans-serif;
+    font-size: 12px;
+    color: #727272;
+    text-decoration: underline;
+    text-underline-position: under;
+    margin-bottom: 40px;
+}
+
+.Event .top_row .left .caption {
+    font-family: FagotCondensed, sans-serif;
+    font-size: 100px;
+    line-height: 77px;
+    margin-bottom: 20px;
+}
+
+.Event .top_row .left .location {
+    font-size: 16px;
+    color: #727272;
+    font-family: Lato-Regular, sans-serif;
+}
+
+.Event .top_row .left .location .text {
+    margin-left: 8px;
+}
+
+.Event .top_row .right {
+    align-items: flex-end;
+    max-width: 738px;
+}
+
+.Event .top_row .right .image {
+    position: relative;
+}
+
+.Event .top_row .right .logo {
+    position: absolute;
+    right: 55px;
+    bottom: -76px;
+}
+
+.Event .main > .left {
+    flex-grow: 1;
+    padding-right: 135px;
+    padding-left: 50px;
+}
+
+.Event .main .left .block + .block {
+    margin-top: 35px;
+}
+
+.Event .main .left .block .caption {
+    font-size: 30px;
+    color: #666464;
+    font-family: FagotCondensed, sans-serif;
+    margin-bottom: 10px;
+}
+
+.Event .main .left .block .description {
+    font-size: 16px;
+    font-family: Lato-Regular, sans-serif;
+    line-height: 22px;
+}
+
+.Event .main > .right {
+    background: url(../img/bg-info.png) no-repeat;
+    padding: 45px 56px 0 71px;
+    flex: 0 0 300px;
+    height: 686px;
+}
+
+.Event .main .right .quote {
+    color: #353535;
+    font-family: Lato-Regular, sans-serif;
+    margin-bottom: 60px;
+}
+
+.Event .main .right .quote .text {
+    font-size: 20px;
+}
+
+.Event .main .right .quote .author {
+    font-size: 12px;
+    text-align: right;
+    margin-top: 10px;
+}
+
+.Event .main .right .event {
+    margin-bottom: 35px;
+}
+
+.Event .main .right .event .DateVertical {
+    flex: 0 0 65px;
+}
+
+.Event .main .right .event .name {
+    flex-grow: 1;
+    padding-left: 10px;
+    font-family: FagotCondensed, sans-serif;
+    font-size: 50px;
+    color: #666464;
+    line-height: 40px;
+}
+
+.Event .main .right .description {
+    margin-bottom: 30px;
+    font-family: Lato-Regular, sans-serif;
+    color: #727272;
+}
+
+.Event .main .right .date,
+.Event .main .right .location,
+.Event .main .right .phones,
+.Event .main .right .site {
+    color: #727272;
+}
+
+.Event .main .right .date img,
+.Event .main .right .phones img,
+.Event .main .right .site img {
+    width: 13px;
+}
+
+.Event .main .right .date .icon,
+.Event .main .right .phones .icon,
+.Event .main .right .site .icon,
+.Event .main .right .location .icon {
+    flex: 0 0 25px;
+}
+
+.Event .main .right .site .value {
+    text-decoration: underline;
+    text-underline-position: under;
+}
+
+.Event .main .right .contact + .contact {
+    margin-top: 25px;
+}
+
+.Event .main {
+    margin-bottom: 80px;
+}
+
+@media all and (max-width: 640px), (max-width: 812px) and (orientation: landscape) {
+    .Event .top_row {
+        padding-left: 15px;
+        margin-bottom: 30px;
+    }
+
+    .Event .top_row .left .small_text {
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+
+    .Event .top_row .left .caption {
+        color: #4f4f4f;
+        font-size: 70px;
+        word-break: break-word;
+        line-height: 60px;
+    }
+
+    .Event .main > .right .quote,
+    .Event .top_row .left .location,
+    .Event .top_row .right {
+        display: none;
+    }
+
+    .Event .main > .right {
+        padding: 0 15px 0 15px;
+        flex: initial;
+        height: initial;
+        background: transparent;
+    }
+
+    .Event .main > .right .description .DateVertical {
+        margin-right: 20px;
+        color: black;
+    }
+
+    .Event .main > .right .description .DateVertical .day {
+        line-height: 28px;
+    }
+
+    .Event .main > .right .description .DateVertical .month {
+        line-height: 20px;
+    }
+
+    .Event .main > .right .description .DateVertical .year {
+        line-height: 15px;
+    }
+
+    .Event .main > .right .description {
+        padding-bottom: 50px;
+        border-bottom: 1px solid #b0b0b04a;
+        margin-bottom: 40px;
+    }
+
+    .Event .main > .right .description .text {
+        line-height: 22px;
+    }
+
+    .Event .main .right .site .value {
+        line-height: 15px;
+    }
+
+    .Event .main .right .location .icon {
+        font-size: 18px;
+    }
+
+    .Event .main > .right .info .left {
+        flex: 0 0 70%;
+    }
+
+    .Event .main .right .date .value {
+        padding-right: 10px;
+        border-right: 1px solid #727272;
+    }
+
+    .Event .main .right .date .time {
+        padding-left: 10px;
+        border-left: 1px solid #727272;
+    }
+
+    .Event .main > .right .info .right {
+        flex: 0 0 30%;
+        align-items: flex-end;
+        justify-content: flex-end;
+    }
+
+    .Event .main > .right .info .right img {
+        width: 60px;
+        cursor: pointer;
+    }
+
+    .Event .main {
+        margin-bottom: 40px;
+    }
+}
+
